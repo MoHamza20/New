@@ -3,21 +3,14 @@ import React, { createContext, useContext, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from "./DarkMode";
-import Carts from "./Carts";
-
-export const showCarts = createContext();
+import { myContext } from "./provider";
+const { ShowCarts, setShowCarts } = useContext(myContext);
 const Nav = () => {
-  const [isShow, setIsShow] = useState(false);
   const handleCarts = () => {
-    setIsShow(!isShow);
-    console.log("hello")
-    console.log(isShow)
+    setShowCarts(!ShowCarts);
   };
   return (
     <>
-      <showCarts.Provider value={{isShow,setIsShow}}>
-        <Carts />
-      </showCarts.Provider>
       <div className="container ">
         <div className="flex items-center justify-between  dark:bg-gray-800 ">
           <div className="left-nav flex items-center gap-4 ">

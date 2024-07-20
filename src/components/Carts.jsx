@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
-import { showCarts } from "./Nav";
 import { IoCloseOutline } from "react-icons/io5";
-
+import { myContext } from "./provider";
 
 const Carts = () => {
-  const {isShow} = useContext(showCarts);
+  const {ShowCarts,setShowCarts} = useContext(myContext)
+  const closeFun = ()=>{
+    setShowCarts(!ShowCarts)
+  }
   // const { setIsShow } = useContext(showCarts);
   return (
     isShow && (
@@ -17,8 +19,8 @@ const Carts = () => {
           <div className="flex justify-between items-center p-2">
             <h1 className="text-xl font-semibold">order now</h1>
             <div>
-              <IoCloseOutline
-               
+              <IoCloseOutline 
+               on onClick={closeFun}
                 className="text-2xl"
               />
             </div>

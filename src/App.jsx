@@ -6,9 +6,11 @@ import Banner from "./components/Banner";
 import Blogs from "./components/Blogs";
 import Footer from "./components/Footer";
 import Carts from "./components/Carts"
+import Provider from "./components/provider";
 const App = () => {
   return (
     <div className= " relative bg-white dark:bg-gray-900 dark:text-white duration-200">
+      <Provider>
       <Nav />
       <LandingPage/>
       <Services/>
@@ -16,6 +18,7 @@ const App = () => {
       <Blogs/>
       <Footer/>
       <Carts/>
+      </Provider>
     </div>
   );
 };
