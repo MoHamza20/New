@@ -131,7 +131,7 @@ const LandingPage = () => {
         bg-gradient-to-br from-gray-400/90 to-gray-100
       flex items-end group :"
         >
-          <div className="text">
+          <div className="text z-50">
             <p className="mb-[2px] text-xl text-gray-100">Enjoy</p>
             <p className="font-semibold text-3xl text-white">with</p>
             <p className="font-bold text-3xl opacity-40">PlayStation</p>
@@ -146,7 +146,7 @@ const LandingPage = () => {
             <img
               src={gaming}
               alt="earphone"
-              className="  ms-auto absolute bottom-0 right-0 
+              className=" w-[230px] sm:w-auto ms-auto absolute bottom-0 right-0 
             group-hover:scale-105  duration-500 "
             />
           </div>
