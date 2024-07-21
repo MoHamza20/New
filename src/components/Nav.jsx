@@ -3,14 +3,19 @@ import React, { createContext, useContext, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from "./DarkMode";
-import { myContext } from "./provider";
-const { ShowCarts, setShowCarts } = useContext(myContext);
+// import Carts from "./Carts"
+
+// export const myContext = createContext();
 const Nav = () => {
-  const handleCarts = () => {
-    setShowCarts(!ShowCarts);
-  };
+// const [ShowCarts,setShowCarts] = useState(false);
+//   const handleCarts = () => {
+//     setShowCarts(!ShowCarts);
+  // };
   return (
     <>
+    {/* <ShowCarts.provider>
+    <Carts/>
+    </ShowCarts.provider> */}
       <div className="container ">
         <div className="flex items-center justify-between  dark:bg-gray-800 ">
           <div className="left-nav flex items-center gap-4 ">
@@ -23,7 +28,7 @@ const Nav = () => {
               </a>
             </div>
             {/*   ul  */}
-            <ul className="flex items-center gap-4">
+            <ul className="hidden  sm:flex items-center gap-4">
               <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
                 <a href="Home">Home</a>
               </li>
@@ -50,7 +55,7 @@ const Nav = () => {
             {/* order button sec */}
             <button className="cartShopping relative p-3 ">
               <FaCartShopping
-                onClick={handleCarts}
+               
                 className="text-xl text-gray-600 dark:text-gray-400"
               />
               <div

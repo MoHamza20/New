@@ -10,21 +10,25 @@ const Blogs = () => {
       title: "How to choose perfect vr",
       subtitle: "Lorem, ipsum dolor sit amet consectetur adipisicing.",
       published: "jone 20 2024",
-      image: blog2
+      image: blog2,
+      oasDelay: "0"
     },
     {
       id:2,
-      title: "How to choose perfect vr",
+      title: "How to choose perfect laptop",
       subtitle: "Lorem, ipsum dolor sit amet consectetur adipisicing.",
       published: "jone 20 2024",
-      image: blog
+      image: blog,
+      oasDelay: "200"
+
     },
     {
       id:3,
-      title: "How to choose perfect vr",
+      title: "How to choose perfect watch",
       subtitle: "Lorem, ipsum dolor sit amet consectetur adipisicing.",
       published: "jone 20 2024",
-      image: p
+      image: p,
+      oasDelay: "400"
     }
   ]
   return (
@@ -36,7 +40,10 @@ const Blogs = () => {
         py-4 my-5 '>
         {
           myBlogs.map((data)=>(
-            <div className='p-3' >
+            <div
+            data-aos-delay={data.oasDelay}
+             data-aos="fade-up" 
+             className='p-3' >
               <div className="image rounded-t-md overflow-hidden">
                 <img src={data.image} alt="" className=' w-full sm:w-auto sm:h-[250px] object-cover
                 hover:scale-105 duration-500' />

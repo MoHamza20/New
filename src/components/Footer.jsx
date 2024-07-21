@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 const Footer = () => {
   return (
     <div className='container mt-3 pb-3'>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 lg:grid-cols-3">
         <div>
             <h1 className='font-semibold'>Navigation</h1>
             <hr className='w-[200px] mt-4 mb-2' />

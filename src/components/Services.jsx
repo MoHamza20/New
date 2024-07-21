@@ -36,7 +36,9 @@ const Services = () => {
         gap-4 gap-y-8 p-4'>
         {
             serviceDate.map((ele)=>(
-                <div className='flex gap-4 items-center'>
+                <div
+                data-aos="zoom-out"
+                 className='flex gap-4 items-center'>
                     <div className="icon">{ele.icon}</div>
                     <div className="text">
                         <h2 className='text-2xl font-semibold'>{ele.title}</h2>
