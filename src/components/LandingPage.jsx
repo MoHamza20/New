@@ -10,7 +10,7 @@ const LandingPage = () => {
   return (
     <div className="container ">
       <div
-        className="headImg px-2 h-[450px] flex flex-col-reverse sm-flex-row  grid-cols-2 sm:justify-between items-center
+        className="headImg p-3 h-[450px] flex flex-col-reverse sm:flex-row  grid-cols-2 sm:justify-between items-center
        rounded-md bg-gradient-to-r from-gray-300/80 to-gray-100 
          dark:from-gray-900 dark:to-gray-800 dark:text-white
         "

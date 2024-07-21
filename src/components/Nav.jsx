@@ -28,7 +28,7 @@ const Nav = () => {
               </a>
             </div>
             {/*   ul  */}
-            <ul className="hidden  sm:flex items-center gap-4">
+            <ul className="hidden  lg:flex items-center gap-4">
               <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
                 <a href="Home">Home</a>
               </li>

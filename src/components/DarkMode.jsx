@@ -15,7 +15,6 @@ const DarkMode = () => {
   };
 
   const element = document.documentElement;
-  console.log(element)
   useEffect(() => {
     if (theme === "dark") {
       element.classList.add("dark");

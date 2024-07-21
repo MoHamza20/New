@@ -41,6 +41,7 @@ const Blogs = () => {
         {
           myBlogs.map((data)=>(
             <div
+            key={data.id}
             data-aos-delay={data.oasDelay}
              data-aos="fade-up" 
              className='p-3' >
