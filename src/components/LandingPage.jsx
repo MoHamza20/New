@@ -102,7 +102,7 @@ const LandingPage = () => {
         </div>
         {/* third col */}
         <div
-          className=" group p-2 relative rounded-md h-[320px] sm:col-span-2  bg-gradient-to-br from-primary to-primary/70
+          className="overflow-hidden group p-2 relative rounded-md h-[320px] sm:col-span-2  bg-gradient-to-br from-primary to-primary/70
       flex items-end"
         >
           <div className="text">
@@ -120,8 +120,8 @@ const LandingPage = () => {
             <img
               src={macbook}
               alt="earphone"
-              className=" w-[300px]  ms-auto absolute bottom-0 right-0 
-            group-hover:scale-105 duration-500 "
+              className=" w-[300px]  ms-auto absolute bottom-[-20px] right-[-20px] 
+            sm:bottom-0 sm:right-0 group-hover:scale-105 duration-500 "
             />
           </div>
         </div>
